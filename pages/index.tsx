@@ -14,14 +14,25 @@ const Home: NextPage = () => {
   console.log("session", session);
   console.log("status", status);
 
-
+  const user = {
+    email: session?.user?.email,
+    name: session?.user?.name,
+    // email: "aasassskh",
+    // name: "jasasdh",
+  }
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("/api/protected");
-      const json = await res.json()
-      console.log(json)
-      if (json.content) setContent(json.content)
+      await fetch("/api/user", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(user)
+      });
+      // const json = await res.json()
+      // console.log(json)
+      // if (json) setContent(json)
     }
     fetchData()
 
