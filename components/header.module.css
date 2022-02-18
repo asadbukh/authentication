@@ -1,0 +1,50 @@
+.main_head {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid black;
+  margin-bottom: 50px;
+  height: 80px;
+}
+.main_head h1 {
+  color: #fff;
+  padding: 10px 0;
+  margin: 0;
+}
+.navlinks {
+  padding: 10px;
+  margin-top: 10px;
+  width: max-content;
+  /* width: 70%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav_link {
+  margin-right: 30px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  border: 0.3px solid black;
+  border-radius: 2px;
+}
+
+.nav_link:hover {
+  border-color: cadetblue;
+}
+
+.user_prof {
+  /* background-color: azure; */
+  width: 90px;
+  height: 50px;
+}
+
+.user_img {
+  background-color: aqua;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
