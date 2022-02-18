@@ -30,11 +30,11 @@ const Header = () => {
 
                 {!session &&
                     <Link href="/api/auth/signin">
-                        <a className={styles.nav_link}>SignIn</a>
+                        <a className={styles.sign_in}>SignIn</a>
                     </Link>}
 
                 {session && <Link href="/api/auth/signout">
-                    <a className={styles.nav_link}>signout</a>
+                    <a className={styles.sign_in}>signout</a>
                 </Link>}
                 {session?.user &&
                     <img
